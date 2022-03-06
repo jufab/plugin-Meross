@@ -87,8 +87,6 @@ $eqLogics = eqLogic::byType($plugin->getId());
             <div class="action-bar">
                 <div class="action-group">
                     <a class="btn btn-danger btn-action-bar eqLogicAction" data-action="returnToThumbnailDisplay"><i class="fas fa-chevron-left">&nbsp;&nbsp;</i>Retour</a>
-                </div>
-                <div class="action-group">
                     <a class="btn btn-success eqLogicAction pull-right" data-action="save"><i class="fa fa-check-circle">&nbsp;&nbsp;</i>{{Sauvegarder}}</a>
                     <a class="btn btn-default eqLogicAction pull-right" data-action="configure"><i class="fa fa-cogs">&nbsp;&nbsp;</i>{{Configuration avancée}}</a>
                     <a class="btn btn-danger eqLogicAction pull-right" data-action="remove"><i class="fa fa-minus-circle">&nbsp;&nbsp;</i>{{Supprimer}}</a>
