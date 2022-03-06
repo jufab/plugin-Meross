@@ -11,3 +11,5 @@ tests/mocked_Jeedom_env/plugins/*
 3rdparty/config.ini
 3rdparty/result*
 __pycache__*
+.idea
+*.iml

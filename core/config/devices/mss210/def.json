@@ -1,0 +1,59 @@
+{
+    "name": "Smart WiFi Plug with Energy Monitor",
+    "group": "Connect and Control",
+    "configuration": {
+        "type": "mss210"
+    },
+    "commands": [
+        {
+            "name": "Status",
+            "type": "info",
+            "subtype": "binary",
+            "order": 1,
+            "generic_type": "ENERGY_STATE",
+            "isVisible": 0,
+            "isHistorized": 0,
+            "logicalId": "onoff_0"
+        },
+        {
+            "name": "Off",
+            "type": "action",
+            "subtype": "other",
+            "order": 2,
+            "generic_type": "ENERGY_OFF",
+            "isVisible": 1,
+            "value": "onoff_0",
+            "logicalId": "off_0",
+            "template": {
+                "dashboard": "prise",
+                "mobile": "prise"
+            }
+        },
+        {
+            "name": "On",
+            "type": "action",
+            "subtype": "other",
+            "order": 3,
+            "generic_type": "ENERGY_ON",
+            "isVisible": 1,
+            "value": "onoff_0",
+            "logicalId": "on_0",
+            "template": {
+                "dashboard": "prise",
+                "mobile": "prise"
+            }
+        },
+        {
+            "name": "Rafraichir",
+            "type": "action",
+            "subtype": "other",
+            "order": 6,
+            "generic_type": "DONT",
+            "configuration": {
+                "switch": "read"
+            },
+            "isVisible": 1,
+            "logicalId": "refresh"
+        }
+    ]
+}
