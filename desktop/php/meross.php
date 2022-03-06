@@ -95,7 +95,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
             </div>
         </section>
         <section class="content">
-            <ul class="nav nav-tabs pull-right" role="tablist">
+            <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
                     <a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab">
                         <i class="fa fa-tachometer"></i> {{Equipement}}
