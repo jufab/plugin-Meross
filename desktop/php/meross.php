@@ -97,19 +97,19 @@ $eqLogics = eqLogic::byType($plugin->getId());
             </div>
         </section>
         <section class="content">
+            <ul class="nav nav-tabs pull-right" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab">
+                        <i class="fa fa-tachometer"></i> {{Equipement}}
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab">
+                        <i class="fa fa-list-alt"></i> {{Commandes}}
+                    </a>
+                </li>
+            </ul>
             <div class="nav-tabs-custom">
-                <ul class="nav nav-tabs pull-right" role="tablist">
-                    <li role="presentation" class="active">
-                        <a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab">
-                            <i class="fa fa-tachometer"></i> {{Equipement}}
-                        </a>
-                    </li>
-                    <li role="presentation">
-                        <a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab">
-                            <i class="fa fa-list-alt"></i> {{Commandes}}
-                        </a>
-                    </li>
-                </ul>
                 <div class="tab-content">
                     <div role="tabpanel" class="tab-pane active" id="eqlogictab">
                         <br />
@@ -221,7 +221,7 @@ $eqLogics = eqLogic::byType($plugin->getId());
                     </div>
                 </div>
             </div>
-        </section>                                                
+        </section>
     </div>
 </div>
 
