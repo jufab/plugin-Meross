@@ -111,7 +111,7 @@ async def refresh_one_device(device):
         # on/off status
         onoff = []
         try:
-            onoff = device.is_on()
+            onoff = [device.is_on()]
         except:
             pass
         d['onoff'] = onoff
