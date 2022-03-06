@@ -3,6 +3,7 @@
 import argparse
 import asyncio
 import json
+import logging
 import os
 import pprint
 import sys
@@ -28,6 +29,8 @@ current_dir = os.path.normpath(os.path.dirname(os.path.abspath(os.path.realpath(
 var_dir = current_dir
 
 # Meross lib
+meross_root_logger = logging.getLogger("meross_iot")
+meross_root_logger.setLevel(logging.ERROR)
 
 # data files
 conffile = os.path.join(var_dir, 'config.ini')
